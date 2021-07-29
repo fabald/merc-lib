@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>MercadoLiebre</title>
+    </head>
+    <body>
+        <form accept="#" method="GET" class="create-form">
+            <div class="form-control">
+                <label for="nom-ap">Nombre y apellido</label>
+                <input type="text" name="nom-ap" id="nom-ap" />
+            </div>
+            <div class="form-control">
+                <label for="user">Usuario</label>
+                <input type="text" name="user" id="user" />
+            </div>
+            <div class="form-control">
+                <label for="birth-date">Fecha de nacimiento</label>
+                <input type="date" name="birth-date" id="birth-date" />
+            </div>
+            <div class="form-control">
+                <label for="address">Domicilio</label>
+                <input type="text" name="address" id="address" />
+            </div>
+            <div class="form-control">
+                <label>Seleccionar perfil de usuario</label>
+                <select name="user-profile">
+                    <option value="buy">Compar</option>
+                    <option value="sell">Vender</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Seleccione las categorías de interés:</label>
+                <label
+                    ><input
+                        type="checkbox"
+                        name="interes"
+                        value="electro"
+                    />Electro</label
+                >
+                <label
+                    ><input type="checkbox" name="interes" value="moda" />Moda</label
+                >
+                <label
+                    ><input
+                        type="checkbox"
+                        name="interes"
+                        value="hogar"
+                    />Hogar</label
+                >
+                <label
+                    ><input
+                        type="checkbox"
+                        name="interes"
+                        value="jugueteria"
+                    />Juguetería</label
+                >
+                <label
+                    ><input type="checkbox" name="interes" value="vida-sana" />Vida
+                    sana</label
+                >
+            </div>
+            <div class="form-control">
+                <label for="user-pic">Foto de usuario</label>
+                <input type="file" name="user-pic" id="user-pic" />
+            </div>
+            <div class="form-control">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" />
+            </div>
+            <div class="form-control">
+                <label for="pass-confirmation">Confirmar contraseña</label>
+                <input
+                    type="password"
+                    name="pass-confirmation"
+                    id="pass-confirmation"
+                />
+            </div>
+            <div>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </div>
+        </form>
+    </body>
+</html>
