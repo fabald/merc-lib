@@ -70,7 +70,7 @@ main h2 {
 
 .search-bar {
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     width: 90%;
 }
 
@@ -94,6 +94,7 @@ article {
 .price {
     font-size: 18px;
     width: 30%;
+    word-break: break-all;
 }
 
 main section article div {
@@ -119,6 +120,7 @@ main section article div i {
     font-size: 16px;
     color: #39b54a;
     width: 70%;
+    word-break: break-all;
 }
 
 .description {
@@ -135,6 +137,8 @@ article div {
     border: none;
     padding: 0px;
     display: flex;
+    align-items: center;
+
 }
 
 .footer-items {
@@ -151,14 +155,31 @@ footer i {
     color: #1259c3;
 }
 
+.search {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    right: 18px;
+    top: 2px;
+    color: #666;
+    background-color: white;
+    padding: 2px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
 .create-form,
 .log-in {
     padding: 20px 15px;
     display: flex;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     width: 90%;
     max-width: 540px;
+    justify-content: center;
 }
 
 .log-in div {
@@ -168,8 +189,26 @@ footer i {
 
 .form-control {
     margin-bottom: 15px;
-    width: 100%;
+    width: 90%;
 }
+
+input, select {
+    border-radius: 5px;
+    border: 1px;
+}
+
+.button {
+    background: #1259c3;
+    color: white;
+}
+
+a:hover, .fa-search:hover {
+    background: #1259c3;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+}
+
 .form-control label {
     margin-bottom: 5px;
     font-style: italic;
@@ -193,6 +232,10 @@ footer i {
         display: flex;
         justify-content: space-between;
     }
+
+    .off, .price {
+        width: 50%;
+     }
 
     .copy-header {
         max-width: 350px;
@@ -219,14 +262,15 @@ footer i {
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin: 15px;
+        width: calc((100%)/2.5);
+        flex-grow: 1;
+        flex-shrink: 1;
     }
     .article-div {
         display: flex;
         flex-wrap: wrap;
     }
-    main section article {
-        flex: 1 0 20%;
-    }
+
 }
 
 @media (min-width: 769px) {
